@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <!-- CSS only -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+        <script type='text/javascript' src='https://cdn.firebase.com/js/client/1.0.6/firebase.js'></script>		
+    
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-app.js"></script>
+    
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/9.8.3/firebase-analytics.js"></script>  
+    
+        <script>
+          // Your web app's Firebase configuration
+          var firebaseConfig = {
+            apiKey: "AIzaSyDJ8oVJePi-xBS4orQwqjDSYj_n2mEy-LU",
+            authDomain: "escola-3af81.firebaseapp.com",
+            databaseURL: "https://escola-3af81-default-rtdb.firebaseio.com",
+            projectId: "escola-3af81",
+            storageBucket: "escola-3af81.appspot.com",
+            messagingSenderId: "950179646283",
+            appId: "1:950179646283:web:acf0176a3cf9cfdf74b6ce",
+            measurementId: "G-XYN4BCLKGV"
+          };
+          // Initialize Firebase
+          firebase.initializeApp(firebaseConfig);
+          firebase.analytics();
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="alunos.js"></script>
+
+    </head>
+    <div >
+        <header>
+            <div>
+                <div>
+                    <h1>Escola<h1>
+                </div>
+                <nav>
+                    <a class='btn btn-primary' href="../index/index.html">Início</a> <a class='btn btn-primary' href="../alunos/alunos.html">Alunos</a> <a class='btn btn-primary' href="../professores/professores.html">Professores</a> <a class="btn btn-primary" href="../disciplinas/disciplinas.html">Disciplina</a>
+                </nav>
+            </div>
+        </header>
+        <hr/>
+    <body>
+
+        <table class="table table-striped table-bordered container" id="tbAlunos">
+            <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>IRA</th>
+            </tr>
+        </thead>
+            <tbody>
+          
+            </tbody>
+            
+        </table>
+    </body>
+</html>
